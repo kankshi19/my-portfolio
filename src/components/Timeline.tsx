@@ -16,54 +16,74 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
+            date="2024 - onsite"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">Software Developer Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Rite Technologies</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+              Designed responsive mobile applications and tested various projects using automation tools.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
+            date="2024 - remote"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Web Developer Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Oasis Infobyte</h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+              Built user-friendly web applications and collaborated with cross-functional teams.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - 2021"
+            date="2023 - remote"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Java Developer Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">InternSavy</h4>
             <p>
-              Full-stack Development, API Development, User Experience
+              Developed backend features using Java, with hands-on experience in API integration and database management.
+            </p>
+          </VerticalTimelineElement>
+          </VerticalTimeline>
+
+      </div>
+
+      <div className="items-container">
+        <h1>Education History</h1>
+          <VerticalTimeline>
+            <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="2022 - 2025"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">Diploma - Computer Engineering</h3>
+            <h4 className="vertical-timeline-element-subtitle">SVKM’s Shri Bhagubhai Mafatlal Polytechnic</h4>
+            <p>
+              Percentage: 97.33%
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2020"
+            date="2012 - 2022"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
+            <h3 className="vertical-timeline-element-title">10th Grade</h3>
+            <h4 className="vertical-timeline-element-subtitle">VPMS Orion ICSE School</h4>
             <p>
-              Automation, Data Governance, Statistical Analysis
+              Percentage: 97.4%
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
+
     </div>
   );
 }

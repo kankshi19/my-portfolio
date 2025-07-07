@@ -9,23 +9,20 @@
 
   button {
     float: right;
-    background-color: white;
-    color: #050f0b;
   }
 
-  button:hover {
-    background-color: #5000ca;
-    color: white;
-  }
+}
 
-  fieldset {
-    background-color: white;
-  }
+
+
+.MuiAlert-root {
+  margin-bottom: 16px !important;
 }
 
 label {
   font-size: 1.2rem;
   font-family: 'DomaineDispNar-Medium', sans-serif;
+  color: #050f0b !important;
 }
 
 .form-flex {
