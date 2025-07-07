@@ -6,6 +6,8 @@
 
 This simple portfolio is designed to showcase my past projects, career history, skill sets, and more.
 
+View the [portfolio]([https://kankshi19.github.io/my-portfolio/]).
+
 ![Screenshot](./src/assets//images/Screenshot.png)
 
 ## Features
