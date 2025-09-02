@@ -23,16 +23,17 @@ function Achievements() {
             
         </div>
         <br/> <br/>
+        <br/>
         <h1>Certifications</h1>
         <div className="achievements-grid">
             <div className="achievement">
-                <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://yujisatojr.itch.io/spacecraft" target="_blank" rel="noreferrer"><h2>Flutter Developement </h2></a>
+                <a href="https://www.udemy.com/certificate/UC-7de3a57b-3f49-400d-a72e-e51631bf15e3/" target="_blank" rel="noreferrer"><img src={mock08} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://www.udemy.com/certificate/UC-7de3a57b-3f49-400d-a72e-e51631bf15e3/" target="_blank" rel="noreferrer"><h2>Flutter Developement </h2></a>
                 <p>Completed a comprehensive Flutter course covering app UI, state management, and backend integration.</p>
             </div>
             <div className="achievement">
-                <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><img src={mock07} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://www.datumlearn.com/" target="_blank" rel="noreferrer"><h2> Foundational C# Development </h2></a>
+                <a href="https://www.freecodecamp.org/certification/Kankshi_Shah/foundational-c-sharp-with-microsoft" target="_blank" rel="noreferrer"><img src={mock07} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://www.freecodecamp.org/certification/Kankshi_Shah/foundational-c-sharp-with-microsoft" target="_blank" rel="noreferrer"><h2> Foundational C# Development </h2></a>
                 <p>Gained hands-on expertise in C# fundamentals, object-oriented programming, and application building through industry-recognized course by Microsoft and freeCodeCamp.</p>
             </div>
         </div>

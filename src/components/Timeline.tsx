@@ -59,6 +59,18 @@ function Timeline() {
           <VerticalTimeline>
             <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            date="2025 - 2028"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">BTech - Computer Engineering</h3>
+            <h4 className="vertical-timeline-element-subtitle">Bhartiya Vidya Bhavan's Sardar Patel Institute of Technology </h4>
+            {/* <p>
+              Percentage: 97.33%
+            </p> */}
+          </VerticalTimelineElement>
+            <VerticalTimelineElement
+            className="vertical-timeline-element--work"
             date="2022 - 2025"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}

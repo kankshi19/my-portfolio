@@ -40,7 +40,7 @@ function Project() {
             </div>
             <div className="project">
                 <a href="https://github.com/kankshi19/Quizathon---mini-project" target="_blank" rel="noreferrer"><img src={mock03} className="zoom" alt="thumbnail" width="100%"/></a>
-                <a href="https://github.com/kankshi19/Quizathon---mini-project" target="_blank" rel="noreferrer"><h2>Quizathom : C Language Project</h2></a>
+                <a href="https://github.com/kankshi19/Quizathon---mini-project" target="_blank" rel="noreferrer"><h2>Quizathon : C Language Project</h2></a>
                 <p>Developed an interactive online quiz platform in C, enabling users to take timed quizzes, receive instant feedback, and track scores, designed for efficient learning and assessment.</p>
             </div>
         </div>
