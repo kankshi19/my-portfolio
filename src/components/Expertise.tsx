@@ -1,111 +1,104 @@
-import React from "react";
-import '@fortawesome/free-regular-svg-icons'
+import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
-import Chip from '@mui/material/Chip';
-import '../assets/styles/Expertise.scss';
 import { faMicrochip } from "@fortawesome/free-solid-svg-icons";
+import '../assets/styles/Expertise.scss';
 
-const labelsFirst = [
-    "React",
-    "Node",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "Flutter",
-    "Flask",
-    "Python",
-    "Java",
-    "C#",
-    "SQL",
-    "Firebase",
-    "MongoDB",
-    "Postman"
+const skills = [
+  {
+    icon: faReact,
+    title: 'Full Stack & App Dev',
+    color: '#3b82f6',
+    description: 'End-to-end web and mobile applications with clean architecture, seamless UX, and scalable backend systems. Mastered the full development lifecycle.',
+    tags: ['React', 'Node.js', 'JavaScript', 'TypeScript', 'Flutter', 'Flask', 'Python', 'Java', 'C#', 'SQL', 'Firebase', 'MongoDB'],
+  },
+  {
+    icon: faMicrochip,
+    title: 'IoT & Embedded Systems',
+    color: '#f72585',
+    description: 'Real-time IoT applications using microcontrollers with GPS/GSM modules. Expert in sensor integration, edge computing, and hardware-software interfacing.',
+    tags: ['Raspberry Pi 4', 'ESP32', 'Arduino', 'GPS', 'GSM', 'Edge AI'],
+  },
+  {
+    icon: faPython,
+    title: 'GenAI & LLM Engineering',
+    color: '#6c3cf7',
+    description: 'Building and deploying custom ML models, GenAI systems, and intelligent applications. Deep expertise in LLMs, prompt engineering, and AI-powered solutions.',
+    tags: ['OpenAI', 'Groq', 'Gemini', 'Hugging Face', 'Machine Learning', 'NLP'],
+  },
 ];
 
-const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Linux",
-];
+function useReveal() {
+  const ref = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        el.classList.add('visible');
+        obs.unobserve(el);
+      }
+    }, { threshold: 0.1 });
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+  return ref;
+}
 
-const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "Gemini",
-    "Hugging Face",
-    "Machine learning",
-    "Deep learning",
-];
-
-const labelsFourth = [
-    "Raspberry Pi 4",
-    "ESP32",
-    "Arduino",
-    "GPS",
-    "GSM"
-];
+function SkillCard({ skill, index }: { skill: typeof skills[0]; index: number }) {
+  const ref = useReveal();
+  return (
+    <div
+      ref={ref}
+      className="skill-card reveal"
+      style={{ '--card-color': skill.color, transitionDelay: `${index * 0.1}s` } as React.CSSProperties}
+    >
+      <div className="skill-card__icon-wrap">
+        <FontAwesomeIcon icon={skill.icon} />
+        <div className="skill-card__icon-glow" />
+      </div>
+      <h3 className="skill-card__title">{skill.title}</h3>
+      <p className="skill-card__desc">{skill.description}</p>
+      <div className="skill-card__tags">
+        {skill.tags.map(tag => (
+          <span key={tag} className="skill-card__tag">{tag}</span>
+        ))}
+      </div>
+      <div className="skill-card__border-glow" />
+    </div>
+  );
+}
 
 function Expertise() {
-    return (
-    <div className="container" id="expertise">
-        <div className="skills-container">
-            <h1>Expertise</h1>
-            <div className="skills-grid">
-                <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack and App Development</h3>
-                    <p>Designed and developed end-to-end web and mobile applications with a strong focus on clean architecture, seamless user experience, and scalable backend systems. Well-versed in the full development lifecycle, from planning to deployment.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsFirst.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
+  const headerRef = useReveal();
 
-                <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Worked with GitHub, Docker, and AWS, focusing on automating testing workflows during my internship. Gained practical experience in cloud infrastructure through hands-on projects using AWS.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsSecond.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
+  return (
+    <section className="expertise-section" id="expertise">
+      {/* Background decoration */}
+      <div className="expertise-section__bg" aria-hidden="true" />
 
-                <div className="skill">
-                    <FontAwesomeIcon icon={faMicrochip} size="3x" />
-                    <h3>IoT & Embedded Systems</h3>
-                    <p>Worked on real-time IoT applications using microcontrollers like ESP32, along with GPS and GSM modules. Familiar with sensor integration, edge device communication, and prototyping with Raspberry Pi for hardware-software interfacing.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsFourth.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
-
-
-                <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Built and deployed custom ML models on Hugging Face, with hands-on experience in GenAI, face detection, and prompt engineering. Exploring real-world applications of LLMs and intelligent systems.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsThird.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
-            </div>
+      <div className="expertise-section__container">
+        {/* Header */}
+        <div ref={headerRef} className="expertise-section__header reveal">
+          <span className="section-label">Expertise</span>
+          <h2 className="expertise-section__title">
+            Crafting at the<br />
+            <span className="gradient-text">intersection of disciplines</span>
+          </h2>
+          <p className="expertise-section__subtitle">
+            Four core domains where I build, innovate, and deliver exceptional results.
+          </p>
         </div>
-    </div>
-    );
+
+        {/* Grid */}
+        <div className="skill-grid">
+          {skills.map((skill, i) => (
+            <SkillCard key={skill.title} skill={skill} index={i} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default Expertise;
