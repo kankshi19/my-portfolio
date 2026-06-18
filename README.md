@@ -8,7 +8,7 @@ This simple portfolio is designed to showcase my past projects, career history, 
 
 View the [Demo](https://kankshi19.github.io/my-portfolio/).
 
-![Screenshot](./src/assets//images/Screenshot.png)
+![Screenshot](./src/assets/images/Screenshot.png)
 
 ## Features
 
