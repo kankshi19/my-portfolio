@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faPython } from '@fortawesome/free-brands-svg-icons';
 import { faMicrochip } from "@fortawesome/free-solid-svg-icons";
 import '../assets/styles/Expertise.scss';
 
