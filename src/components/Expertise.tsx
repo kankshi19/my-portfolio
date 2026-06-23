@@ -12,19 +12,20 @@ const skills = [
     description: 'End-to-end web and mobile applications with clean architecture, seamless UX, and scalable backend systems. Mastered the full development lifecycle.',
     tags: ['React', 'Node.js', 'JavaScript', 'TypeScript', 'Flutter', 'Flask', 'Python', 'Java', 'C#', 'SQL', 'Firebase', 'MongoDB'],
   },
-  {
-    icon: faMicrochip,
-    title: 'IoT & Embedded Systems',
-    color: '#f72585',
-    description: 'Real-time IoT applications using microcontrollers with GPS/GSM modules. Expert in sensor integration, edge computing, and hardware-software interfacing.',
-    tags: ['Raspberry Pi 4', 'ESP32', 'Arduino', 'GPS', 'GSM', 'Edge AI'],
-  },
+
   {
     icon: faPython,
     title: 'GenAI & LLM Engineering',
     color: '#6c3cf7',
     description: 'Building and deploying custom ML models, GenAI systems, and intelligent applications. Deep expertise in LLMs, prompt engineering, and AI-powered solutions.',
     tags: ['OpenAI', 'Groq', 'Gemini', 'Hugging Face', 'Machine Learning', 'NLP'],
+  },
+  {
+    icon: faMicrochip,
+    title: 'IoT & Embedded Systems',
+    color: '#f72585',
+    description: 'Real-time IoT applications using microcontrollers with GPS/GSM modules. Expert in sensor integration, edge computing, and hardware-software interfacing.',
+    tags: ['Raspberry Pi 4', 'ESP32', 'Arduino', 'GPS', 'GSM', 'Edge AI'],
   },
 ];
 
