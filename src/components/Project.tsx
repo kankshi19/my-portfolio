@@ -5,6 +5,9 @@ import mock05 from '../assets/images/mock05.jpg';
 import mock06 from '../assets/images/mock06.jpg';
 import mock09 from '../assets/images/mock09.jpeg';
 import mock10 from '../assets/images/mock10.jpeg';
+import thinkless from '../assets/images/thinkless.jpeg';
+import scholarsynth from '../assets/images/scholarsynth.png';
+import careergpt from '../assets/images/careergpt.png';
 import '../assets/styles/Project.scss';
 
 const projects = [
@@ -19,13 +22,14 @@ const projects = [
     featured: true,
   },
   {
-    img: mock04,
-    title: 'SpendSavy',
-    subtitle: 'Flask-based Expense Tracker',
-    desc: 'Web-based expense tracking application using Python Flask, enabling users to manage and visualize their daily expenses with intuitive charts.',
-    tags: ['Python', 'Flask', 'SQL', 'Charts'],
-    link: 'https://github.com/kankshi19/Expense_tracker',
-    color: '#06d6a0',
+    img: thinkless,
+    title: 'ThinkLess',
+    subtitle: 'AI-Powered Productivity & Focus Assistant',
+    desc: 'ThinkLess is an AI-powered productivity companion designed to reduce cognitive overload by intelligently organizing tasks, prioritizing activities, and providing actionable insights. It helps users stay focused, manage workloads efficiently, and make better decisions through personalized AI-driven recommendations and smart workflow automation.',
+    tags: ['Flutter', 'Firebase', 'AI', 'Productivity', 'Groq', 'LLM'],
+    link: 'https://github.com/kankshi19/thinkless',
+    color: '#6366F1',
+    featured: true,
   },
   {
     img: mock05,
@@ -38,6 +42,27 @@ const projects = [
     featured: true,
   },
   {
+    img: scholarsynth,
+    title: 'ScholarSynth',
+    subtitle: 'AI Research Paper Generation & Analysis Platform',
+    desc: 'ScholarSynth is an intelligent research assistant that autonomously searches academic literature, analyzes research papers, extracts insights from PDFs, and generates comprehensive research reports. Built using LangChain and LLM technologies, it streamlines the research process for students, researchers, and professionals.',
+    tags: ['Python', 'LangChain', 'LLM', 'Research', 'AI', 'PDF Analysis'],
+    link: 'https://github.com/kankshi19/ScholarSynth',
+    color: '#06B6D4',
+    featured: false,
+  },
+  {
+    img: careergpt,
+    title: 'CareerGPT',
+    subtitle: 'AI Career Guidance Platform',
+    desc: 'CareerGPT is an AI-driven career assistant that helps users explore career paths, analyze skills, optimize resumes, and receive personalized learning recommendations. The platform leverages large language models to provide tailored guidance for students and professionals seeking career growth.',
+    tags: ['AI', 'Career Development', 'LLM', 'React', 'Node.js'],
+    link: 'https://github.com/kankshi19/CareerGPT',
+    color: '#10B981',
+    featured: false,
+  },
+
+  {
     img: mock04,
     title: 'SpendSavy',
     subtitle: 'Flask-based Expense Tracker',
@@ -46,6 +71,7 @@ const projects = [
     link: 'https://github.com/kankshi19/Expense_tracker',
     color: '#06d6a0',
   },
+
   {
     img: mock09,
     title: 'BetterWorld',
@@ -73,8 +99,6 @@ const projects = [
     link: 'https://github.com/kankshi19/Quizathon---mini-project',
     color: '#ec4899',
   },
-
-  
 ];
 
 function ProjectCard({ project, index }: { project: typeof projects[0]; index: number }) {
@@ -132,7 +156,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
           aria-label={`View ${project.title} on GitHub`}
         >
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M2 2h12v12M4 12L13 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+            <path d="M2 2h12v12M4 12L13 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
           </svg>
           View Project
         </a>
@@ -144,7 +168,7 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
           <span className="project-card__subtitle">{project.subtitle}</span>
           <a href={project.link} target="_blank" rel="noreferrer" className="project-card__github" aria-label="GitHub">
             <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
             </svg>
           </a>
         </div>

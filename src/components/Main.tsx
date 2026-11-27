@@ -230,7 +230,7 @@ function Main() {
           >
             <span>View My Work</span>
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </a>
           <a
@@ -268,16 +268,7 @@ function Main() {
           <img src={avatar} alt="Kankshi Shah" className="hero__avatar-img" />
           <div className="hero__avatar-overlay" />
         </div>
-        {/* Floating badges */}
-        <div className="hero__float-badge hero__float-badge--1">
-          <span>🚀</span> AI/ML
-        </div>
-        <div className="hero__float-badge hero__float-badge--2">
-          <span>⚡</span> Full Stack
-        </div>
-        <div className="hero__float-badge hero__float-badge--3">
-          <span>🔬</span> IoT
-        </div>
+
       </div>
 
       {/* Scroll indicator */}
