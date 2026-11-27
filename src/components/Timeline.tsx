@@ -49,7 +49,6 @@ const educationItems: TimelineItem[] = [
     org: "SVKM's Shri Bhagubhai Mafatlal Polytechnic",
     description: 'Percentage: 97.33%',
     type: 'education',
-    badge: 'Gold',
   },
   {
     date: '2012 — 2022',
